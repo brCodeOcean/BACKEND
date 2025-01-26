@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+    <p>
+    </p>
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-slate-800">
+                    Social<span class="text-teal-600">Flow</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-teal-600 transition-colors">Features</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-teal-600 transition-colors">Pricing</a>
+                    <a href="#testimonials"
+                        class="text-slate-600 hover:text-teal-600 transition-colors">Testimonials</a>
+                    <button class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden">
+                    <i data-feather="menu" class="w-6 h-6 text-slate-800"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-lg shadow-lg p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-slate-600 hover:text-teal-600 transition-colors">Features</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-teal-600 transition-colors">Pricing</a>
+                    <a href="#testimonials"
+                        class="text-slate-600 hover:text-teal-600 transition-colors">Testimonials</a>
+                    <button class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-slate-50 to-teal-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="hero-text text-5xl md:text-6xl font-bold text-slate-800 leading-tight">
+                        Manage Your Social Presence with
+                        <span class="text-teal-600">Confidence <%= age %></span>
+                    </h1>
+                    <p class="hero-text text-xl text-slate-600">
+                        Streamline your social media management with powerful tools, analytics, and automation.
+                    </p>
+                    <div class="hero-text flex space-x-4">
+                        <button
+                            class="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-colors">
+                            Start Free Trial
+                        </button>
+                        <button
+                            class="border-2 border-slate-300 text-slate-700 px-8 py-3 rounded-full hover:border-teal-600 hover:text-teal-600 transition-colors">
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://plus.unsplash.com/premium_photo-1683580362892-fc31c2ff935b?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Dashboard Preview" class="rounded-lg shadow-xl" data-aos="fade-left">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="flex items-center space-x-2">
+                            <i data-feather="trending-up" class="w-5 h-5 text-teal-600"></i>
+                            <span class="text-slate-800 font-semibold">+147% Engagement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4" data-aos="fade-up">
+                    Powerful Features
+                </h2>
+                <p class="text-xl text-slate-600" data-aos="fade-up" data-aos-delay="100">
+                    Everything you need to manage your social media presence
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1683134271694-61df670ca1be?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="User Avatar" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-slate-800">Sarah Johnson</h4>
+                            <p class="text-slate-600">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 leading-relaxed">
+                        "SocialFlow has transformed how we manage our social media presence. The analytics are
+                        incredible, and the scheduling features save us hours each week."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1637684666451-423047d6bf5e?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="User Avatar" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-slate-800">Mark Stevens</h4>
+                            <p class="text-slate-600">Social Media Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 leading-relaxed">
+                        "The automation features are game-changing. Our engagement has increased by 200% since we
+                        started using SocialFlow."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://plus.unsplash.com/premium_photo-1661277627232-b83420818b23?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="User Avatar" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-slate-800">Emily Chen</h4>
+                            <p class="text-slate-600">Content Creator</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-700 leading-relaxed">
+                        "The interface is intuitive and the customer support is exceptional. I couldn't imagine managing
+                        our social media without it."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4" data-aos="fade-up">
+                    Success Stories
+                </h2>
+                <p class="text-xl text-slate-600" data-aos="fade-up" data-aos-delay="100">
+                    See how leading brands achieve success with SocialFlow
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1454473332662-09275b52e5a1?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Case Study 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">TechStart's Social Media Revolution</h3>
+                        <p class="text-slate-600 mb-4">
+                            Learn how TechStart increased their social engagement by 300% in just 3 months.
+                        </p>
+                        <button class="text-teal-600 font-semibold hover:text-teal-700 transition-colors">
+                            Read Case Study →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Case Study 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">FreshFoods' Digital Transformation</h3>
+                        <p class="text-slate-600 mb-4">
+                            Discover how FreshFoods built a loyal following of 1M+ customers.
+                        </p>
+                        <button class="text-teal-600 font-semibold hover:text-teal-700 transition-colors">
+                            Read Case Study →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-teal-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8" data-aos="fade-up">
+                Ready to Transform Your Social Media Strategy?
+            </h2>
+            <p class="text-xl text-teal-100 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Join thousands of successful brands using SocialFlow to grow their social media presence.
+            </p>
+            <div class="flex justify-center space-x-4" data-aos="fade-up" data-aos-delay="200">
+                <button class="bg-white text-teal-600 px-8 py-3 rounded-full hover:bg-slate-100 transition-colors">
+                    Start Free Trial
+                </button>
+                <button
+                    class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-teal-600 transition-colors">
+                    Schedule Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">SocialFlow</h3>
+                    <p class="mb-4">Making social media management simple and effective.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="hover:text-white transition-colors">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="hover:text-white transition-colors">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center">
+                <p>&copy; 2024 <a href="https://sohrabzia.github.io/">Designed by Sohrab zia</a>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
