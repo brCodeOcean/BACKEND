@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contactpage', {name: "balaram"});
+    res.render('contactpage', {name: "balaram roy"});
 });
 
 // //Dynamic Routing
